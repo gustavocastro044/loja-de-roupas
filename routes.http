@@ -1,0 +1,29 @@
+POST http://localhost:3333/roupas
+Content-Type: application/json
+
+{
+  "titulo":"Camisa Star Wars 2",
+  "descricao":"Camisa do grupo Star Wars",
+  "preco": "1000"
+}
+
+###
+
+GET http://localhost:3333/roupas
+
+###
+
+GET http://localhost:3333/roupas?search=monica
+
+###
+PUT http://localhost:3333/roupas/2
+Content-Type: application/json
+
+{
+  "titulo":"Camisa Star Wars",
+  "descricao":"Camisa do grupo Star Wars",
+  "preco": "1000"
+}
+
+###
+DELETE http://localhost:3333/roupas/3
